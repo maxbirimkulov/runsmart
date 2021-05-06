@@ -1,0 +1,25 @@
+@mixin pos($url){
+  height: 50px;
+  width: 31px;
+  position: absolute;
+  background: $url center/cover no-repeat;
+  transform: translateY(-50%);
+  top: 50%;
+
+}
+
+.slider{
+  padding: 108px 0 98px;
+  .owl-carousel .owl-item img{
+    width: 750px;
+    margin: 0 auto;
+  }
+  .owl-nav .owl-prev{
+    @include pos(url("../images/carousel/chevron-left-solid.png"));
+    left: 0;
+  }
+  .owl-nav .owl-next{
+    @include pos(url("../images/carousel/chevron-right-solid.png"));
+    right: 0;
+  }
+}

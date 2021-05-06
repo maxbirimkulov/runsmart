@@ -1,0 +1,37 @@
+.run {
+    background-color: #F6F6F6;
+    padding: 100px 0 100px 0;
+    &__zag {
+        @include text($Museo700, 30px, #0D0D0D );
+        text-align: center;
+        margin-bottom: 75px;
+    } 
+    .col-4 {
+        text-align: center;
+        padding-left: 100px;
+    }
+    .col-4:first-child {
+        padding-left: 0;
+    }
+    &__icon {
+        margin-bottom: 50px;
+    }
+    &__title {
+        @include text($Museo700, 18px, #0D0D0D );
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        @include text($Museo300, 14px, #0D0D0D );
+        line-height: 160%;
+    }
+    &__running {
+        @include text($Museo300, 14px, #FF0000 );
+    }
+    &__running:hover {
+        background-color: #FF0000;
+        border-radius: 3px;
+        padding: 3px 7px;
+        color: #fff;
+        transition-duration: 0.8s;
+    }
+}

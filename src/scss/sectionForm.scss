@@ -1,0 +1,47 @@
+@mixin txt($fontFamily, $fontSize, $color, $lineLeight, $fontStyle, $fontWeight){
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $color;
+  line-height: $lineLeight;
+  font-style: $fontStyle;
+  font-weight: $fontWeight;
+}
+.sectionForm{
+  padding: 85px 0 90px;
+  background: url("../images/bg2.png") center/cover no-repeat;
+  &__title{
+    @include txt($Museo700, 36px, rgba(255,255,255,1), 43px, normal, normal);
+  }
+  &__subtitle{
+    @include txt($Museo500, 20px, rgba(255,255,255,1), 24px, normal, normal);
+    margin: 70px 0 35px;
+  }
+  &__label{
+    width: 300px;
+    height: 50px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .form &:last-child{
+    margin-bottom: 50px;
+  }
+  &__input{
+    @include txt($Museo300, 14px, rgba(75,75,75,1), 66px, normal, normal);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0 18px;
+  }
+  &__btn{
+    @include txt($Museo300, 14px, white, 19px, normal, normal);
+    width: 300px;
+    height: 50px;
+    background: #c70101;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    display: block;
+  }
+}

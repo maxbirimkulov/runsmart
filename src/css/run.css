@@ -1,0 +1,44 @@
+.run {
+  background-color: #F6F6F6;
+  padding: 100px 0 100px 0;
+}
+.run__zag {
+  text-align: center;
+  margin-bottom: 75px;
+  font-size: 30px;
+  font-family: "Museo Sans Cyrl 700", sans-serif;
+  color: #0D0D0D;
+}
+.run .col-4 {
+  text-align: center;
+  padding-left: 100px;
+}
+.run .col-4:first-child {
+  padding-left: 0;
+}
+.run__icon {
+  margin-bottom: 50px;
+}
+.run__title {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: "Museo Sans Cyrl 700";
+  color: #0D0D0D;
+}
+.run__subtitle {
+  font-size: 14px;
+  font-family: "Museo Sans Cyrl 300", sans-serif;
+  color: #0D0D0D;
+  line-height: 160%;
+}
+.run__running {
+  font-family: "Museo Sans Cyrl 300";
+  color: #FF0000;
+}
+.run__running:hover {
+  background-color: #FF0000;
+  border-radius: 3px;
+  padding: 3px 7px;
+  color: #fff;
+  transition-duration: 0.8s;
+}

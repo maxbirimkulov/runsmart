@@ -1,0 +1,89 @@
+.overlay{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.56);
+  z-index: 1;
+  display: none;
+  .popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    max-height: 400px;
+    padding: 32px 40px 42px;
+    background: #F2F2F2;
+    z-index: 2;
+    &__consultation{
+      display: none;
+      &-title{
+        @include txt($Museo700, 18px, #0d0d0d, 22px, normal, normal);
+        text-align: center;
+        margin-bottom: 7px;
+      }
+      &-subtitle{
+        @include txt($Museo500, 14px, rgba(13,13,13,1), 16px, normal, normal);
+        text-align: center;
+        margin-bottom: 24px;
+      }
+    }
+    &__close{
+      position: absolute;
+      top: 0;
+      right: -41px;
+      width: 21px;
+      height: 21px;
+      cursor: pointer;
+
+      &::before{
+        position: absolute;
+        left: 0;
+        top: 40%;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: $red;
+        transform: rotate(45deg);
+      }
+      &::after{
+        position: absolute;
+        left: 0;
+        top: 40%;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: $red;
+        transform: rotate(-45deg) ;
+      }
+    }
+    &__order{
+      display: none;
+      &-title{
+        @include txt($Museo700, 18px, #0d0d0d, 22px, normal, normal);
+        text-align: center;
+        margin-bottom: 7px;
+      }
+      &-subtitle{
+        @include txt($Museo500, 14px, rgba(13,13,13,1), 16px, normal, normal);
+        text-align: center;
+        margin-bottom: 24px;
+      }
+    }
+    &__thanks{
+      display: none;
+      &-title{
+        @include txt($Museo700, 18px, #0d0d0d, 22px, normal, normal);
+        text-align: center;
+        margin-bottom: 31px;
+      }
+      &-subtitle{
+        @include txt($Museo500, 14px, rgba(13,13,13,1), 16px, normal, normal);
+        text-align: center;
+       margin-bottom: 7px;
+      }
+    }
+  }
+}

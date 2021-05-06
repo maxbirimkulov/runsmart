@@ -1,0 +1,39 @@
+.header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    &__menu {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        @include text($Museo500, 12px, #fff );
+        margin-bottom: 0;
+    }
+    &__subtitle {
+        @include text($Museo700, 18px, #fff );
+        margin-left: -4%;
+    }
+    &__tel {
+        @include text($Museo700, 18px, #fff );
+        margin-bottom: 7px;
+    }
+    &__button {
+        @include text($Museo500, 12px, #fff );
+        padding: 7px 13px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        width: 95%;
+        margin-left: 5%;
+        background-color: #c70101;
+        cursor: pointer;
+
+    }
+    &__button:hover {
+        color: #c70101;
+        background-color: #fff;
+        transition-duration: 0.8s;
+    }
+}

@@ -1,0 +1,14 @@
+.home {
+  background: url("../images/header/images/bg.png") no-repeat top left/100% 100%;
+  background-size: cover;
+  text-align: end;
+  padding: 177px 0 50px 0;
+}
+.home__title {
+  font-size: 42px;
+  color: #fff;
+}
+.home__subtitle {
+  font-size: 24px;
+  color: #fff;
+}

@@ -1,0 +1,38 @@
+.review {
+  padding-bottom: 70px;
+  &__title {
+    @include text($Museo700, 30px, #0d0d0d);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+  }
+  &__comment {
+    display: flex;
+    margin-bottom: 100px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__user-logo {
+    width: 170px;
+    height: 170px;
+    object-fit: none;
+    border-radius: 50%;
+  }
+  &__maincomm {
+    margin-left: 60px;
+    margin-right: 25px;
+  }
+  &__name {
+    @include text($Museo700, 18px, #0d0d0d);
+    margin-bottom: 6px;
+  }
+  &__marathon {
+    @include text($Museo300, 14px, #646464);
+    margin-bottom: 15px;
+  }
+  &__text {
+    @include text($Museo300, 16px, #0d0d0d);
+    line-height: 19px;
+  }
+}

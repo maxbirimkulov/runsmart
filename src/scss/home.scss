@@ -1,0 +1,72 @@
+.home {
+    background: url("../images/header/images/bg.png")no-repeat top left/ 100% 100%;
+    background-size: cover;
+    text-align: end;
+    padding: 177px 0 50px 0;
+    &__title{
+        font-size: 42px;
+        color: #fff;
+        margin-bottom: 0;
+        font-family: 'Myriad Pro';
+        font-weight: normal;
+	    font-style: normal;
+    }
+    &__subtitle {
+        font-size: 24px;
+        color: #fff;
+        font-family: "Museo Sans Cyrl 500",sans-serif;
+    }
+    &__menu {
+        margin-top: 65px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 3%;
+        margin-bottom: 67px;
+    }
+    &__icon {
+        margin-right: 3%;
+        text-align: center;
+    }
+    &__icon {
+        margin-right: 3%;
+        text-align: center;
+    }
+    &__icon:last-child {
+        margin-right: 0;
+    }
+    &__img {
+        margin-bottom: 15px;
+    }
+    &__img-text {
+        @include text($Museo500, 14px, #fff );
+    }
+    &__button {
+        @include text($Museo500, 16px, #fff );
+        padding: 10px 25px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: #c70101;
+        margin-bottom: 20px;
+    }
+    &__button:hover {
+        color: #c70101;
+        background-color: #fff;
+        transition-duration: 0.8s;
+    }
+    &__text {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__p1 {
+        @include text($Museo500, 16px, #fff );
+        margin-right: 6px;
+    }
+    &__a {
+        @include text($Museo500, 16px, #fff );
+        &:hover {
+            color: #c70101;
+            transition-duration: 0.8s;
+        }
+    }
+}
